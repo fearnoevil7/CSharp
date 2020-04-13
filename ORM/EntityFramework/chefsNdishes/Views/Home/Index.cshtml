@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6><a href=""><u>Chefs</u></a></h6>
+    <h6><a href="/dishes"><u>Dishes</u></a></h6>
+    <a href="/new"><u>Add a chef</u></a>
+    <h1>Check out our roster of chefs!</h1>
+    
+    
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th># of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var chef in Model)
+            {
+                <tr>
+                    <td>@chef.FirstName</td>
+                    <td>@chef.LastName</td>
+                    <td>@chef.CreatedDishes.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+</body>
+</html>

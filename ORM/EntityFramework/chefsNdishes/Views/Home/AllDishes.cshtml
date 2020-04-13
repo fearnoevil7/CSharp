@@ -1,0 +1,40 @@
+@using chefsNdishes.Models
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @model List<Dish>
+    <a href="/"><u>Chefs</u></a>
+    <a href="/dishes"><u>Dishes</u></a>
+    <a href="/dish/new"><u>Add a dish!</u></a>
+    <h1>Yum, look at our tasty dishes!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Chef</th>
+                <th>Tastiness</th>
+                <th>Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dish in Model)
+            {
+                <tr>
+                    <td>@dish.Name</td>
+                    <td>@dish.Creator.FirstName @dish.Creator.LastName</td>
+                    <td>@dish.Tastiness</td>
+                    <td>@dish.Calories</td>
+                </tr>
+
+                <form action = "/delete/@dish.DishId" method="GET">
+                    <input type="submit" value="Delete">
+                </form>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

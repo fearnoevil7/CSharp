@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @Html.ValidationSummary(false)
+    @model User
+    <form asp-action = "Create" asp-controller = "Home" method = "post">
+        <span>Name: </span>
+        <span asp-validation-for = "Name"></span>
+        <label asp-for = "Name"></label>
+        <input type = "text" name = "Name">
+        <span>Location: </span>
+        <span asp-validation-for = "Location"></span>
+        <label asp-for = "Location"></label>
+        <select type = "text" name= "Location">
+            <option>Dallas</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+        </select>
+        <span>Favorite Language: </span>
+        <span asp-validation-for = "Language"></span>
+        <label asp-for = "Language"></label>
+        <select type = "text" name = "Language">
+            <option>C#</option>
+            <option>Java</option>
+            <option>Angular</option>
+            <option>React</option>
+            <option>Python</option>
+            <option>Ruby</option>
+        </select>
+        <span>Comments: </span>
+        <span asp-validation-for = "Comment"></span>
+        <label asp-for = "Comment"></label>
+        <textarea cols="7" row="2" name="Comment"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

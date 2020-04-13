@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <div>
+            <u><a href="/">Home</a></u>
+            <u><a href="/projects">Projects</a></u>
+            <u><a href="/contact">Contact</a></u>
+        </div>
+
+        <h1>Here are some project of mine! </h1>
+
+        @{
+            var ListOfProjects = new List<project>()
+                {
+                    new project("cake 1", "Cake1.jpg", "Project 1"),
+                    new project("cake 2", "cake2.jpeg", "Project 2"),
+                    new project("cake 3", "cake3.jpg", "Project 3"),
+                    new project("cake 4", "cake4.jpg", "Project 4"),
+                    new project("cat 5", "cat5.jpg", "Project 5"),
+                };
+
+            foreach(var project in ListOfProjects)
+            {
+                <h6>@project.title</h6>
+                <img src = "~/images/" += @project.imageSource>
+                <p>@project.description</p>
+            }
+        }
+    </body>
+</html>

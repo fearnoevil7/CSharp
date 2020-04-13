@@ -1,0 +1,26 @@
+@using chefsNdishes.Models
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a chef!</h1>
+    <a href="/"><u>Home</u></a>
+    @Html.ValidationSummary(false)
+    @model Chef
+    <form asp-action="Create" asp-controller="Home" asp-method="Post">
+        <span asp-validation-for="FirstName"></span>
+        <label asp-for="FirstName"></label>
+        <input type="text" name="FirstName">
+        <span asp-validation-for="LastName"></span>
+        <label asp-for="LastName"></label>
+        <input type="text" name="LastName">
+        <span asp-validation-for="Birthday"></span>
+        <label asp-for="Birthday"></label>
+        <input type="date" name="Birthday">
+        <input type="submit" value="Create">
+    </form>
+</body>
+</html>

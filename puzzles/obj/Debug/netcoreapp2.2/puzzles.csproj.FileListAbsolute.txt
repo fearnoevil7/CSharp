@@ -1,0 +1,11 @@
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/bin/Debug/netcoreapp2.2/puzzles.deps.json
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/bin/Debug/netcoreapp2.2/puzzles.runtimeconfig.json
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/bin/Debug/netcoreapp2.2/puzzles.runtimeconfig.dev.json
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/bin/Debug/netcoreapp2.2/puzzles.dll
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/bin/Debug/netcoreapp2.2/puzzles.pdb
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/obj/Debug/netcoreapp2.2/puzzles.csprojAssemblyReference.cache
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/obj/Debug/netcoreapp2.2/puzzles.csproj.CoreCompileInputs.cache
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/obj/Debug/netcoreapp2.2/puzzles.AssemblyInfoInputs.cache
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/obj/Debug/netcoreapp2.2/puzzles.AssemblyInfo.cs
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/obj/Debug/netcoreapp2.2/puzzles.dll
+/Users/Jonathon/Documents/coding_dojo/C#/puzzles/obj/Debug/netcoreapp2.2/puzzles.pdb

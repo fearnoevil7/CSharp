@@ -1,0 +1,11 @@
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/bin/Debug/netcoreapp2.2/basic13.deps.json
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/bin/Debug/netcoreapp2.2/basic13.runtimeconfig.json
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/bin/Debug/netcoreapp2.2/basic13.runtimeconfig.dev.json
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/bin/Debug/netcoreapp2.2/basic13.dll
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/bin/Debug/netcoreapp2.2/basic13.pdb
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/obj/Debug/netcoreapp2.2/basic13.csprojAssemblyReference.cache
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/obj/Debug/netcoreapp2.2/basic13.csproj.CoreCompileInputs.cache
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/obj/Debug/netcoreapp2.2/basic13.AssemblyInfoInputs.cache
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/obj/Debug/netcoreapp2.2/basic13.AssemblyInfo.cs
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/obj/Debug/netcoreapp2.2/basic13.dll
+/Users/Jonathon/Documents/coding_dojo/C#/basic13/obj/Debug/netcoreapp2.2/basic13.pdb

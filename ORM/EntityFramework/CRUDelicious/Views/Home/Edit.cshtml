@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href = "/"><u>Home</u></a>
+    @{
+        @Html.ValidationSummary(false)
+        @model Dish
+        <form asp-action = "Update" asp-controller = "Home" method = "Post">
+            <h1>Edit @Model.name</h1>
+            <span>Name: </span>
+            <span asp-validation-for = "name"></span>
+            <label asp-for = "name"></label>
+            <input type = "text" name = "name" placeholder = "@Model.name">
+            <span>Chef: </span>
+            <span asp-validation-for = "chef"></span>
+            <label asp-for = "chef"></label>
+            <input type = "text" name = "chef" placeholder = "@Model.chef">
+            <span>Calories: </span>
+            <span asp-validation-for = "calories"></span>
+            <label asp-for = "calories"></label>
+            <input type = "number" name = "calories" placeholder = "@Model.calories">
+            <span>Tastiness: </span>
+            <span asp-validation-for = "tastiness"></span>
+            <label asp-for = "tastiness"></label>
+            <select type = "number" name = "tastiness" placeholder = "@Model.tastiness">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <span>Description: </span>
+            <span asp-validation-for = "description"></span>
+            <label asp-for = "description"></label>
+            <textarea cols = "25" rows = "7" name = "description" placeholder = "@Model.description"></textarea>
+            <input type = "submit" value = "Update">
+        </form>
+    }
+</body>
+</html>

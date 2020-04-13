@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Here Are Some Delicious Foods!</h1>
+        @{
+            var StringList = new List <string>()
+                {
+                    "Apple Pies",
+                    "Burritos",
+                    "Clams Casino",
+                    "Donuts",
+                };
+            foreach(var word in StringList)
+            {  
+                @if (word[0] == 'C' || word[0] == 'c') {
+                    <p style="color:red;" >@word</p>
+                } else {
+                    <p>@word</p>
+                }
+            }
+        }
+    </body>
+</html>

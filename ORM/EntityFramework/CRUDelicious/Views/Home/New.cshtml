@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a new dish!</h1>
+    <a href = "/"><u>Home</u></a>
+    @Html.ValidationSummary(false)
+    @model Dish
+    <form action = "/create" method = "Post">
+        <span>Name: </span>
+        <span asp-validation-for = "name"></span>
+        <label asp-for = "name"></label>
+        <input type = "text" name = "name">
+        <span>Chef: </span>
+        <span asp-validation-for = "chef"></span>
+        <label asp-for = "chef"></label>
+        <input type = "text" name = "chef">
+        <span>Calories: </span>
+        <span asp-validation-for = "calories"></span>
+        <label asp-for = "calories"></label>
+        <input type = "number" name = "calories">
+        <span>Tastiness: </span>
+        <span asp-validation-for = "tastiness"></span>
+        <label asp-for = "tastiness"></label>
+        <select type = "number" name = "tastiness">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <span>Description: </span>
+        <span asp-validation-for = "description"></span>
+        <label asp-for = "description"></label>
+        <textarea cols = "25" rows = "7" name = "description"></textarea>
+        <input type = "submit" value = "Create">
+    </form>
+</body>
+</html>

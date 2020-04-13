@@ -1,0 +1,28 @@
+﻿@* @{
+    ViewData["Title"] = "Home Page";
+} *@
+@Html.ValidationSummary(false)
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @model User
+    <form action = "/postData" method = "POST">
+        <p>First Name: </p>
+        <input type = "text" name = "FirstName">
+        <span asp-validation-for = "FirstName"></span>
+        <p>Last Name: </p>
+        <label asp-for = "LastName"></label>
+        <input type = "text" name = "LastName">
+        <span asp-validation-for = "LastName"></span>
+        <span>Age: </span><span asp-validation-for = "Age"></span>
+        <label asp-for = "Age"></label>
+        <input type = "text" name = "Age">
+        <input type = "submit" value = "Create">
+    </form>
+</body>
+</html>

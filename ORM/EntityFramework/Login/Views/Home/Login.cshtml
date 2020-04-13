@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login!!!!!!!</h1>
+    <a href = "/"><u>Home</u></a>
+    @Html.ValidationSummary(false)
+    @model LoginUser
+    <form action = "/session/create" method = "Post">
+        <span asp-validation-for="email"></span>
+        <label asp-for="email"></label>
+        <input type = "text" name = "email">
+        <span asp-validation-for="password"></span>
+        <label asp-for="password"></label>
+        <input type = "text" name = "password">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

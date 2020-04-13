@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href = "/login"><u>Login</u></u></a>
+    <h1>Register!!!!!!!!</h1>
+    @Html.ValidationSummary(false)
+    @model User
+    <form action = "/register" method = "Post">
+        <span>First Name: </span>
+        <span asp-validation-for="firstName"></span>
+        <label asp-for = "firstName"></label>
+        <input type = "text" name = "firstName">
+        <span>Last Name: </span>
+        <span asp-validation-for="lastName"></span>
+        <label asp-for = "lastName"></label>
+        <input type = "text" name = "lastName">
+        <span>Email: </span>
+        <span asp-validation-for="email"></span>
+        <label asp-for = "email"></label>
+        <input type = "text" name = "email">
+        <span>Password: </span>
+        <span asp-validation-for="password"></span>
+        <label asp-for = "password"></label>
+        <input type = "text" name = "password">
+        <span>Confirm Password: </span>
+        <span asp-validation-for="confirmPassword"></span>
+        <label asp-for = "confirmPassword"></label>
+        <input type = "text" name = "confirmPassword">
+        <input type = "submit" value = "Register">
+    </form>
+</body>
+</html>

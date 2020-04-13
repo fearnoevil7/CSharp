@@ -1,0 +1,48 @@
+@using chefsNdishes.Models
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a dish!</h1>
+    <a href="/"><u>Home</u></a>
+    @Html.ValidationSummary(false)
+    @model Dish
+    <form asp-action = "CreateDish" asp-controller="Home" asp-method = "Post">
+        <span>Name: </span>
+        <span asp-validation-for = "Name"></span>
+        <label asp-for = "Name"></label>
+        <input type = "text" name = "Name">
+        <span>Chef: </span>
+        <span asp-validation-for = "ChefId"></span>
+        <label asp-for = "ChefId"></label>
+        <select type = "number" name="ChefId">
+            @foreach (var chef in ViewBag.allChefs)
+            {
+                <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
+            }
+        </select>
+        <span>Calories: </span>
+        <span asp-validation-for = "Calories"></span>
+        <label asp-for = "Calories"></label>
+        <input type = "number" name = "Calories">
+        <span>Tastiness: </span>
+        <span asp-validation-for = "Tastiness"></span>
+        <label asp-for = "Tastiness"></label>
+        <select type = "number" name = "Tastiness">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <span>Description: </span>
+        <span asp-validation-for = "Description"></span>
+        <label asp-for = "Description"></label>
+        <textarea cols = "25" rows = "7" name = "Description"></textarea>
+        <input type = "submit" value = "Create">
+    </form>
+</body>
+</html>

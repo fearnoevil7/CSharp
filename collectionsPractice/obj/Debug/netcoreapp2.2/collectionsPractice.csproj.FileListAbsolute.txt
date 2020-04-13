@@ -1,0 +1,11 @@
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/bin/Debug/netcoreapp2.2/collectionsPractice.deps.json
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/bin/Debug/netcoreapp2.2/collectionsPractice.runtimeconfig.json
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/bin/Debug/netcoreapp2.2/collectionsPractice.runtimeconfig.dev.json
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/bin/Debug/netcoreapp2.2/collectionsPractice.dll
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/bin/Debug/netcoreapp2.2/collectionsPractice.pdb
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/obj/Debug/netcoreapp2.2/collectionsPractice.csprojAssemblyReference.cache
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/obj/Debug/netcoreapp2.2/collectionsPractice.csproj.CoreCompileInputs.cache
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/obj/Debug/netcoreapp2.2/collectionsPractice.AssemblyInfoInputs.cache
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/obj/Debug/netcoreapp2.2/collectionsPractice.AssemblyInfo.cs
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/obj/Debug/netcoreapp2.2/collectionsPractice.dll
+/Users/Jonathon/Documents/coding_dojo/C#/collectionsPractice/obj/Debug/netcoreapp2.2/collectionsPractice.pdb

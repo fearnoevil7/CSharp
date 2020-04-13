@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome To CRUDelicious!</h1>
+    <h4>Check out some recent dishes!</h4>
+    <a href = "/new"><u>Add a dish</u></a>
+    @foreach (var dish in Model)
+    {
+        <p><a href = "/show/@dish.id"><u>@dish.name</u></a> by @dish.chef</p>
+    }
+</body>
+</html>
